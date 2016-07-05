@@ -1,0 +1,51 @@
+[0m[[0minfo[0m] [0mRunning main.scala.local.LocalClient [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	C:\ScalaWS\BitCoinClientProject\target\scala-2.11\classes[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Shruthi Gopalswamy\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Shruthi Gopalswamy\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Shruthi Gopalswamy\.ivy2\cache\com.typesafe\config\bundles\config-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Shruthi Gopalswamy\.ivy2\cache\com.typesafe.akka\akka-remote_2.11\jars\akka-remote_2.11-2.3.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Shruthi Gopalswamy\.ivy2\cache\io.netty\netty\bundles\netty-3.8.0.Final.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Shruthi Gopalswamy\.ivy2\cache\com.google.protobuf\protobuf-java\bundles\protobuf-java-2.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Shruthi Gopalswamy\.ivy2\cache\org.uncommons.maths\uncommons-maths\jars\uncommons-maths-1.2.2a.jar[0m
+[0m[[31merror[0m] [0m(run-main-0) java.net.ConnectException: Connection refused: connect[0m
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at main.scala.local.LocalClient$.delayedEndpoint$main$scala$local$LocalClient$1(LocalClient.scala:41)
+	at main.scala.local.LocalClient$delayedInit$body.apply(LocalClient.scala:20)
+	at scala.Function0$class.apply$mcV$sp(Function0.scala:40)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.collection.immutable.List.foreach(List.scala:383)
+	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)
+	at scala.App$class.main(App.scala:76)
+	at main.scala.local.LocalClient$.main(LocalClient.scala:20)
+	at main.scala.local.LocalClient.main(LocalClient.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Logger$$anon$4.apply(Logger.scala:85)
+	at sbt.TrapExit$App.run(TrapExit.scala:248)
+	at java.lang.Thread.run(Unknown Source)
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread LocalSystem-akka.remote.default-remote-dispatcher-7 to terminate.[0m
